@@ -1,13 +1,13 @@
 /**
   * @file       error_demo.c
-  * @brief      errorÊ¾Àý
+  * @brief      errorå®žä¾‹
   * @author     redoc
   * @version    v1.0
   * @date       2019-04-02
   *
   * @note
   * [2019-04-02] <redoc> (v1.0) 
-  * ³õÊ¼°æ±¾
+  * åˆ›å»º
   *
   * @remark
   */
