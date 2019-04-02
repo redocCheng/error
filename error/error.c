@@ -91,12 +91,11 @@ int8_t error_delete(error_node_t *s_error_code)
         else
         {
             curr = &entry->next;
-        }
-            
+        }     
     }
     
     s_error_code->error.var.exist = false;
-	s_error_code->error.var.used = false;
+    s_error_code->error.var.used = false;
     
     return 0;
 }
@@ -114,21 +113,21 @@ void error_process(void)
     if(target_tr)
     {
         if(false == target_tr->error.var.used)
-		{
-			//只执行第一次
-			//error_do_first(target_tr->error.var.id);
-			
-		#ifdef ERRROR_PRINT
+        {
+            //只执行第一次
+            //error_do_first(target_tr->error.var.id);
+            
+        #ifdef ERRROR_PRINT
             DEBUG_OUTPUT("error id:%d\r\n",target_tr->error.var.id);
         #endif
-		
-			target_tr->error.var.used = true;
-		}
-		else
-		{
-			//不断地处理错误  
-			//error_do(target_tr->error.var.id);
-		}
+
+            target_tr->error.var.used = true;
+        }
+        else
+        {
+            //不断地处理错误  
+            //error_do(target_tr->error.var.id);
+        }
 
         target_tr = target_tr->next;
     }

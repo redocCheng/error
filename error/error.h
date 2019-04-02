@@ -32,9 +32,9 @@ typedef union
     {
         uint8_t     level       :  2;       /*<!  错误等级,暂时未做处理   */
         uint8_t     exist       :  1;       /*<!  节点存在标志            */
-		uint8_t     used		:  1;       /*<!  节点是否被处理          */
+        uint8_t     used        :  1;       /*<!  节点是否被处理          */
         uint16_t    id          : 10;       /*<!  错误代码  最大1024个    */
-		uint8_t     reserveed   :  2;       /*<!  预留                    */
+        uint8_t     reserveed   :  2;       /*<!  预留                    */
     }var;
     
 }error_t;

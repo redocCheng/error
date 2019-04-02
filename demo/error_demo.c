@@ -16,25 +16,24 @@
 #include "error.h"
 
 
-
 void main(void)
 {
 
-	while(1)
-	{
-		error_insert(&error_node_error_1);
-		error_insert(&error_node_error_2);
-		error_insert(&error_node_error_3);
-		delay_ms(2000);
-		error_delete(&error_node_error_1);
-		error_delete(&error_node_error_2);
-		error_delete(&error_node_error_3);
-	}
+    while(1)
+    {
+        error_insert(&error_node_error_1);
+        error_insert(&error_node_error_2);
+        error_insert(&error_node_error_3);
+        delay_ms(2000);
+        error_delete(&error_node_error_1);
+        error_delete(&error_node_error_2);
+        error_delete(&error_node_error_3);
+    }
 }
 
 
 void __int_1000ms(void)
 {
-	error_process();
+    error_process();
 }
 

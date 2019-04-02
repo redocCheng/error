@@ -1,9 +1,9 @@
 /**
-  * @file        error.c
-  * @brief        error定义
+  * @file       error.c
+  * @brief      error定义
   * @author     redoc
   * @version    v1.0
-  * @date        2018-07-23
+  * @date       2018-07-23
   *
   * @note
   * [2018-07-23] <redoc> (v1.0) 
